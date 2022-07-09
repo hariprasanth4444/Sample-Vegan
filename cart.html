@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            background-image: url(images/new1.jpg);
+            /* background : url('images/new.jpg'); */
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        main{
+            display:flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding:15px;
+        }
+        .item{
+            display:flex;
+            justify-content:space-between;
+            width:325px;
+            background:whitesmoke;
+            margin:20px 0;
+            align-items:center;
+            height:100px;
+            padding:5px;
+            box-sizing: border-box;
+        }
+        .item,.item img,button{
+            border-radius: 5px;
+            border:0;
+        }
+        .item img{
+            width:90px;
+            height:90px;
+        }
+        .item div:last-child{
+            display:flex;
+            flex-direction:column;
+            width:fit-content;
+            justify-content: space-around;
+            height:80px;
+        }
+        button{
+            padding:10px;
+            background:hsl(26, 100%, 55%);
+        }
+        #chk{
+            width:100vw;
+            text-align:center;
+        }
+        #chk button{
+            padding:5px 10px;
+            height:50px;
+            width:200px;
+        }
+        #ordersum{
+            position:absolute;
+            width:100vw;
+            height:100vh;
+            background:rgba(255, 255, 255,0.5);
+            display:none;
+            place-items:center;
+            z-index:2;
+        }
+        #order{
+            width:min(90%,350px);
+            background:white;
+            height:fit-content;
+            padding:30px;
+            box-sizing:border-box;
+            text-align:center;
+        }
+        #order img{
+            margin-left:95%;
+            margin-bottom:10px;
+        }
+        table{
+            width:100%;
+        }
+        td{
+            text-align:center;
+            width:max-content;
+        }
+        p{
+            text-align:right;
+            margin-right:20px;
+        }
+        #order div{
+            width:100%;
+            display:grid;
+            place-items:center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="ordersum">
+        <div id="order">
+            <img src="images/icon-close.svg" alt="close">
+            <div>
+                <table></table>
+                <p></p>
+                <!-- <div><button onclick="myFunction()">Order Now</button></div> -->
+                <div><button>Order Now</button></div>
+            </div>
+        </div>
+    </div>
+    <header></header>
+    <main></main>
+    <div id="chk"><button>Check Out</button></div>
+    <!-- <script>
+        function myFunction() {
+          <a href="checkout.php"></a>
+        }
+    </script> -->
+    <script src="menu1.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>

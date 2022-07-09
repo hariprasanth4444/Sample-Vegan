@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#logo {
+  font-family: 'Courgette', cursive;
+  font-size: 25px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+#menu,
+aside {
+  display: none;
+}
+nav {
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+nav a {
+  box-sizing: border-box;
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+header div div,
+header div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90px;
+}
+header div div {
+  width: 70px;
+}
+header div img {
+  width: 25px;
+  height: 25px;
+}
+strike{
+  color:grey;
+}
+
+#notify{
+  position:absolute;
+  background:orange;
+  width:20px;
+  height:15px;
+  border-radius:5px;
+  margin:-25px 0 0 10px;
+  text-align:center;
+  padding: 1px;
+  font-weight: 600;
+}
+@media (max-width: 880px) {
+  nav {
+    width: 500px;
+  }
+  nav a {
+    letter-spacing: 1px;
+  }
+}
+@media (max-width: 770px) {
+  nav {
+    width: 380px;
+  }
+  nav a{
+    font-size:20px;
+  }
+}
+@media (max-width: 650px) {
+  nav {
+    display: none;
+  }
+  header div{
+    width:150px;
+  }
+  header div div{
+    width:85px;
+  }
+  #menu {
+    display: block;
+    width:30px;
+  }
+  aside {
+    position: absolute;
+    width: 300px;
+    flex-direction: column;
+    padding: 30px;
+    box-sizing: border-box;
+    backdrop-filter: blur(10px);
+    z-index: 3;
+    margin-top: 290px;
+    font-weight:600;
+  }
+  #close {
+    width: 25px;
+    height: 25px;
+  }
+  aside a {
+    margin: 20px 0;
+    letter-spacing: 2px;
+    color: black;
+  }
+}
